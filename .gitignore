@@ -1,6 +1,9 @@
 # The directory Mix will write compiled artifacts to.
 /_build/
 
+# Ignoring dyalizer
+/.elixir_ls/
+
 # If you run "mix test --cover", coverage assets end up here.
 /cover/
 
@@ -26,6 +29,3 @@ erl_crash.dump
 
 # Ignore package tarball (built via "mix hex.build").
 igdb-*.tar
-
-# Ignoring dyalizer
-/.elixir_ls/
