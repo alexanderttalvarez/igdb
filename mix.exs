@@ -8,6 +8,8 @@ defmodule Igdb.MixProject do
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      description: description(),
+      package: package(),
 
       # Docs
       name: "Igdb",
