@@ -4,18 +4,17 @@ Igdb is a library for retrieving data from the [IGDB database](https://www.igdb.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `igdb` to your list of dependencies in `mix.exs`:
+Add this dependency to your project, inside your `mix.exs` file:
 
 ```elixir
 def deps do
   [
-    {:igdb, "~> 0.1.0"}
+    {:igdb, git: "https://github.com/alexanderttalvarez/igdb.git"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/igdb](https://hexdocs.pm/igdb).
-
+And execute the command:
+```
+mix deps.get
+```
