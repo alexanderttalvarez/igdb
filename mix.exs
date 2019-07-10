@@ -7,7 +7,30 @@ defmodule Igdb.MixProject do
       version: "0.1.0",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+
+      # Docs
+      name: "Igdb",
+      source_url: "https://github.com/alexanderttalvarez/igdb",
+      docs: [
+        main: "Igdb", # The main page in the docs
+        extras: ["README.md"]
+      ]
+    ]
+  end
+
+  defp description do
+    """
+    A library for retrieving videogames data from the IGDB API V.3.
+    """
+  end
+
+  defp package do
+    [
+      files: ["lib", "mix.exs", "README.md"],
+      maintainers: ["Alexander TT"],
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/alexanderttalvarez/igdb"}
     ]
   end
 
